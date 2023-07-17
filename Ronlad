@@ -25,6 +25,63 @@
 // }else {
  //   console.log("mi numero es negatico");
  //}
+//function prueba (num1, num2){
+//   let result = num1 * num2;
+//   return result;
+//}
+//console.log(prueba(7,9));
+
+//function rakel (a , b){
+//    console.log (a + " esta hablando con " + b + " en el central");
+//}
+// rakel("ama","raul");
+//  rakel("rachel","eren");
+//  rakel();
+//  rakel();
+//alert ("elije dos colores")
+//  let listadeCompras = ["marron","azul","verde","gris"];
+//  console.log(listadeCompras[2]);
+//  console.log(listadeCompras[1]);
+//let i = 0;
+//  do{
+
+//let nota = prompt("introduce la nota");
+//  i++
+
+//if(nota >= 0 && nota <= 3){
+//    alert("muy deficiente")
+
+//} else if(nota >= 3 && nota <= 5){
+//    alert("insuficiente")
+
+//}else if(nota >= 5 && nota <= 6){
+//    alert("suficiente")
+//}else if(nota >= 6 && nota <= 7){
+//    alert("bien")
+//}else if(nota >= 7 && nota <= 9 ){
+ //   alert("notable")
+//}else if (nota >= 9 && nota <= 10 ){
+//    alert("sobresaliente")
+//}else{
+//    alert("nota erronea")
+//}
+
+
+//  }while(i<=5);
+
+//let casa = {
+//"costo" : "75.000 ",
+//"cuartos" : 2,
+//"baños" : 1,
+//"cocina" : 1
+
+//};
+
+//console.log(casa.baños);
+
+let compras = [[ "galletas", 2],[ "helado", 3],["arros", 6] ];
+console.log("necesito comprar " + compras[1][1] + " " + compras[0][0] );
+
 
 //let randal = 8
 //let oscar = "ramon";
