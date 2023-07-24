@@ -1,0 +1,28 @@
+let x = 5
+{
+let y = 3
+x += y
+
+console.log(x);
+
+}
+
+
+const date = new Date ('05-15-2023')
+console.log(date)
+
+let a = 5.5
+let b = '7.6'
+let c = a + parseFloat(b)
+console.log(c)
+
+let h = 5
+let g = 5
+let z = h == g;
+console.log(z)
+
+let u = 7
+let o = 9
+
+
+let j = u = 5 && o == 5 ;
