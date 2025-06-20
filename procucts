@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+#include <array>
+
+const int productsTotal = 3;
+
+struct Products {
+    std::string name;
+    float price;
+    int cantidad;
+};
+
+
+int main() {
+    std::array<Products, productsTotal> inventario;
+    for (int i = 0; i < productsTotal; i++) {
+        std::cout << "Producto " << i + 1 << ":\n";
+        std::cout << "Nombre: ";
+        std::cin >> inventario[i].name;
+        std::cout << "Precio: ";
+        std::cin >> inventario[i].price;
+
+        std::cout << "Cantidad: ";
+        std::cin >> inventario[i].cantidad;
+    }
+
+    float total = 0;
+
+    std::cout << "\n resumen del inventario: \n";
+
+    for(const Products p : inventario){
+        float subtotal = p.price * p.cantidad;
+        std::cout << p.name << " - Cantidad: " << p.cantidad << ", Precio: " << p.price << ", Subtotal: " << subtotal << "\n";
+        total += subtotal;
+    }
+
+    std::cout << "\nTotal en inventario: " << total << "\n";
+
+    return 0;
+}
