@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <array>
+#include <algorithm>
+
+enum Materia { Matematica, Fisica, Quimica, TotalMaterias };
+
+struct Estudiante {
+    std::string nombre;
+    int edad;
+    std::array<float, TotalMaterias> notas;
+};
+
+int main() {
+    Estudiante estudiante;
+
+   std::cout << "Nombre del estudiante: ";
+   std::cin >> estudiante.nombre;
+
+    std::cout << "Edad del estudiante: ";
+   std::cin >> estudiante.edad;
+
+    std::fill(estudiante.notas.begin(), estudiante.notas.end(), float(0.0));
+    for (int i = 0; i < TotalMaterias; i++) {
+        std::cout << "Ingresa la nota de la materia " << i + 1 << ": ";
+        std::cin >> estudiante.notas[i];
+    }
+
+   float suma = float(0.0);
+    for (float nota : estudiante.notas) {
+        suma += nota;
+    }
+
+    float promedio = suma / TotalMaterias;
+    std::cout << "\nResumen:\n";
+    std::cout << "Nombre: " << estudiante.nombre << "\n";
+    std::cout << "Edad: " << estudiante.edad << "\n";
+   std::cout << "Promedio: " << promedio << "\n";
+
+    return 0;
+}
